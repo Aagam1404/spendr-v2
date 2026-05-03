@@ -1,0 +1,84 @@
+/* index.css - Global styles and CSS variables */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap');
+
+:root {
+  --cream: #faf9f6;
+  --white: #ffffff;
+  --ink: #1a1a18;
+  --ink-soft: #4a4a46;
+  --ink-muted: #9a9a94;
+  --accent: #c8873a;
+  --accent-light: #f5e8d8;
+  --accent-dark: #a06828;
+  --green: #3a8c5c;
+  --green-light: #d8f0e4;
+  --red: #c84444;
+  --red-light: #f5d8d8;
+  --blue: #3a6ec8;
+  --blue-light: #d8e4f5;
+  --shadow-sm: 0 1px 3px rgba(26,26,24,0.06), 0 1px 2px rgba(26,26,24,0.04);
+  --shadow-md: 0 4px 16px rgba(26,26,24,0.08), 0 2px 6px rgba(26,26,24,0.04);
+  --shadow-lg: 0 12px 40px rgba(26,26,24,0.12), 0 4px 12px rgba(26,26,24,0.06);
+  --radius: 16px;
+  --radius-sm: 10px;
+  --navbar-h: 64px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--cream);
+  color: var(--ink);
+  min-height: 100vh;
+}
+
+/* ─── SCROLLBAR ─── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--cream); }
+::-webkit-scrollbar-thumb { background: #ddd; border-radius: 100px; }
+
+/* ─── LOADING SPINNER ─── */
+.spinner {
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--accent-light);
+  border-top-color: var(--accent);
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+  display: inline-block;
+}
+
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* ─── EMPTY STATE ─── */
+.empty {
+  text-align: center;
+  padding: 48px 20px;
+  color: var(--ink-muted);
+}
+
+.empty-icon  { font-size: 40px; margin-bottom: 12px; opacity: 0.5; }
+.empty-title { font-size: 16px; font-weight: 500; color: var(--ink-soft); }
+.empty-sub   { font-size: 13px; margin-top: 6px; }
+
+/* ─── ANIMATIONS ─── */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(-8px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes modalIn {
+  from { opacity: 0; transform: scale(0.96) translateY(10px); }
+  to   { opacity: 1; transform: scale(1) translateY(0); }
+}
