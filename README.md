@@ -1,4 +1,5 @@
 # SpendR v2 — Expense Tracker
+🔗 [GitHub Repository](https://github.com/Aagam1404/spendr-v2)
 
 ## Description
 SpendR is a full-stack single-page expense tracking web application. It allows users to register, log in, and manage their personal expenses with a clean and intuitive interface. An admin panel allows administrators to monitor all users, their activity, and expenses.
