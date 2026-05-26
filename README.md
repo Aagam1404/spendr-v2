@@ -67,7 +67,7 @@ Go to **http://localhost:5173** in your browser
 | Field    | Details          |
 |----------|-----------------|
 | Email    | aagam@gmail.com |
-| Password | [your password] |
+| Password | 26144562 |
 | Role     | Admin           |
 
 ### Regular User Account
